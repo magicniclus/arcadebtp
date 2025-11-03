@@ -9,7 +9,6 @@ import { submitFormToFirebase, validateFormData, FormData } from '@/lib/firebase
 import FormLoader from '@/components/FormLoader';
 import { useRouter } from 'next/navigation';
 import { Metadata } from 'next';
-import { seoConfig } from '@/lib/seo-config';
 
 interface ServicePageProps {
   // SEO et métadonnées
@@ -58,37 +57,6 @@ interface ServicePageProps {
   }[];
 }
 
-// Fonction pour générer les métadonnées SEO
-export function generateServiceMetadata(
-  serviceName: string,
-  location: string,
-  description: string,
-  keywords: string[]
-): Metadata {
-  const title = `${serviceName} ${location} - ROUAT DAVID | Devis Gratuit`;
-  const metaDescription = `${description} Devis gratuit et personnalisé en ${location}. Expert peintre professionnel.`;
-  
-  return {
-    title,
-    description: metaDescription,
-    keywords: [...keywords, 'devis gratuit', 'peintre professionnel', location].join(', '),
-    openGraph: {
-      title,
-      description: metaDescription,
-      type: 'website',
-      locale: 'fr_FR',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description: metaDescription,
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
-  };
-}
 
 export default function ServicePage({
   title,
