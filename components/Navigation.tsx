@@ -19,16 +19,16 @@ export default function Navigation() {
   const [showFloatingButton, setShowFloatingButton] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const pathname = usePathname();
-  const phoneNumber = "06 58 12 30 42";
+  const phoneNumber = "07 45 65 62 25";
 
   // Détecter si on est sur la page d'accueil
   const isHomePage = pathname === '/';
 
   // Liste des services pour le dropdown
   const servicesLinks = [
-    { name: 'Peinture Intérieure', href: '/services/peinture-interieure' },
-    { name: 'Peinture Extérieure', href: '/services/peinture-exterieure' },
-    { name: 'Finitions & Décoration', href: '/services/finitions-decoration' },
+    { name: 'Carrelage Intérieur', href: '/services/carrelage-interieur' },
+    { name: 'Carrelage Extérieur', href: '/services/carrelage-exterieur' },
+    { name: 'Revêtements de Sol', href: '/services/revetements-sol' },
   ];
 
   // Navigation adaptative selon la page
@@ -100,10 +100,10 @@ export default function Navigation() {
               </motion.div>
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-foreground">
-                  ROUAT DAVID
+                  ORAN-BAT63
                 </span>
                 <span className="text-sm text-gray-500 font-medium">
-                  peinture intérieur | extérieur
+                  carrelage | revêtements de sol
                 </span>
               </div>
             </Link>
@@ -287,10 +287,10 @@ export default function Navigation() {
                 </motion.div>
                 <div className="flex flex-col">
                   <span className="text-xl font-bold text-foreground">
-                    ROUAT DAVID
+                    ORAN-BAT63
                   </span>
                   <span className="text-xs text-gray-400 font-medium">
-                    peinture intérieur | extérieur
+                    carrelage | revêtements de sol
                   </span>
                 </div>
               </div>

@@ -14,28 +14,28 @@ export interface SEOConfig {
 }
 
 export const seoConfig: SEOConfig = {
-  title: "ROUAT DAVID - Peintre Professionnel en Auvergne-Rhône-Alpes",
-  description: "ROUAT DAVID, entrepreneur du bâtiment spécialisé en peinture intérieure et extérieure. Devis gratuit en Auvergne-Rhône-Alpes, 01800.",
+  title: "ORAN-BAT63 - Carreleur Professionnel en Auvergne-Rhône-Alpes",
+  description: "ORAN-BAT63, entrepreneur du bâtiment spécialisé en carrelage et revêtements de sol. Devis gratuit dans le 63430 et Auvergne-Rhône-Alpes.",
   keywords: [
-    "peinture intérieure Auvergne-Rhône-Alpes",
-    "peinture extérieure 01800",
-    "peintre professionnel Auvergne",
-    "finitions peinture Rhône-Alpes",
-    "entrepreneur bâtiment 01800",
-    "peinture maison Auvergne-Rhône-Alpes",
-    "travaux peinture intérieure",
-    "peinture décorative",
-    "ravalement façade",
-    "finitions professionnelles",
+    "carrelage intérieur Auvergne-Rhône-Alpes",
+    "carrelage extérieur 63430",
+    "carreleur professionnel Auvergne",
+    "revêtements sol Rhône-Alpes",
+    "entrepreneur bâtiment 63430",
+    "carrelage maison Auvergne-Rhône-Alpes",
+    "travaux carrelage intérieur",
+    "carrelage décoratif",
+    "sol carrelé",
+    "finitions carrelage",
     "devis gratuit",
-    "ROUAT DAVID",
-    "David Rouat",
-    "peinture Auvergne",
+    "ORAN-BAT63",
+    "Mohammed Hadjouti",
+    "carrelage Auvergne",
     "entrepreneur bâtiment"
   ],
-  author: "David Rouat",
-  siteUrl: "https://rouat-david.fr",
-  siteName: "ROUAT DAVID - Peinture",
+  author: "Mohammed Hadjouti",
+  siteUrl: "https://oranbat63.fr",
+  siteName: "ORAN-BAT63 - Carrelage",
   locale: "fr_FR",
   type: "website",
   image: "/og-image.jpg",
@@ -116,28 +116,28 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": `${seoConfig.siteUrl}#organization`,
-  "name": "ROUAT DAVID",
-  "legalName": "Rouat David - Entrepreneur du bâtiment",
+  "name": "ORAN-BAT63",
+  "legalName": "Oran-bat63 - Entrepreneur du bâtiment",
   "url": seoConfig.siteUrl,
   "logo": `${seoConfig.siteUrl}/logo.png`,
   "image": `${seoConfig.siteUrl}/og-image.jpg`,
   "description": seoConfig.description,
   "founder": {
     "@type": "Person",
-    "name": "David Rouat"
+    "name": "Mohammed Hadjouti"
   },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "01800",
-    "postalCode": "01800",
+    "addressLocality": "63430",
+    "postalCode": "63430",
     "addressRegion": "Auvergne-Rhône-Alpes",
     "addressCountry": "FR"
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+33658123042",
+    "telephone": "+33745656225",
     "contactType": "customer service",
-    "email": "rouat.david@orange.fr",
+    "email": "oran.bat63@gmail.com",
     "availableLanguage": "French"
   },
   "areaServed": [
@@ -147,19 +147,19 @@ export const organizationSchema = {
     },
     {
       "@type": "AdministrativeArea", 
-      "name": "Ain"
+      "name": "Puy-de-Dôme"
     },
     {
       "@type": "City",
-      "name": "01800"
+      "name": "63430"
     }
   ],
   "serviceType": [
-    "Peinture intérieure",
-    "Peinture extérieure", 
-    "Finitions et décoration",
-    "Ravalement de façade",
-    "Travaux de peinture"
+    "Carrelage intérieur",
+    "Carrelage extérieur", 
+    "Revêtements de sol",
+    "Finitions carrelage",
+    "Travaux de carrelage"
   ],
   "priceRange": "€€",
   "openingHours": "Mo-Fr 08:00-18:00",
@@ -172,37 +172,37 @@ export const organizationSchema = {
 export const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Painting Services",
+  "serviceType": "Tiling Services",
   "provider": {
     "@id": `${seoConfig.siteUrl}#organization`
   },
   "areaServed": organizationSchema.areaServed,
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Services de peinture",
+    "name": "Services de carrelage",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Peinture intérieure",
-          "description": "Travaux de peinture intérieure professionnels avec finitions parfaites"
+          "name": "Carrelage intérieur",
+          "description": "Travaux de carrelage intérieur professionnels avec finitions parfaites"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service", 
-          "name": "Peinture extérieure",
-          "description": "Peinture extérieure et ravalement de façades avec produits adaptés"
+          "name": "Carrelage extérieur",
+          "description": "Carrelage extérieur et terrasses avec matériaux adaptés"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service", 
-          "name": "Finitions et décoration",
-          "description": "Techniques de peinture décorative et finitions spéciales"
+          "name": "Revêtements de sol",
+          "description": "Pose de revêtements de sol et finitions spéciales"
         }
       }
     ]

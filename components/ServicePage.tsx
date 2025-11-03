@@ -570,3 +570,50 @@ export default function ServicePage({
     </div>
   );
 }
+
+// Fonction pour générer les métadonnées SEO automatiquement
+export function generateServiceMetadata(
+  serviceName: string,
+  location: string,
+  description: string,
+  keywords: string[]
+): Metadata {
+  const title = `${serviceName} ${location} - ORAN-BAT63 | Devis Gratuit`;
+  
+  return {
+    title,
+    description,
+    keywords: keywords.join(', '),
+    authors: [{ name: 'Mohammed Hadjouti' }],
+    creator: 'Mohammed Hadjouti',
+    publisher: 'ORAN-BAT63',
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    openGraph: {
+      title,
+      description,
+      siteName: 'ORAN-BAT63 - Carrelage',
+      locale: 'fr_FR',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
+}

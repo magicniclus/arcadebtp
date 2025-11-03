@@ -46,11 +46,11 @@ export default function ContactPage() {
   };
 
   const contactInfo = {
-    address: "Zone d'intervention :\n01800\nAuvergne-Rhône-Alpes\n50 km autour de 01800",
-    phone: "06 58 12 30 42",
-    email: "rouat.david@orange.fr",
+    address: "Zone d'intervention :\n63430\nAuvergne-Rhône-Alpes\n50 km autour de 63430",
+    phone: "07 45 65 62 25",
+    email: "oran.bat63@gmail.com",
     hours: "Lundi - Vendredi: 8h00 - 18h00\nSamedi: 8h00 - 12h00",
-    mapEmbedUrl: "https://maps.google.com/maps?q=01800,France&t=&z=12&ie=UTF8&iwloc=&output=embed"
+    mapEmbedUrl: "https://maps.google.com/maps?q=63430,France&t=&z=12&ie=UTF8&iwloc=&output=embed"
   };
 
   return (
@@ -71,7 +71,7 @@ export default function ContactPage() {
               Contactez-nous
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-              Un projet de peinture intérieure ou extérieure ? ROUAT DAVID est là pour vous accompagner en Auvergne-Rhône-Alpes.
+              Un projet de carrelage ou revêtements de sol ? ORAN-BAT63 est là pour vous accompagner dans le 63430 et Auvergne-Rhône-Alpes.
             </p>
           </motion.div>
         </div>

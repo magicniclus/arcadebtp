@@ -21,41 +21,41 @@ export default function Home() {
   });
   const servicesData = [
     {
-      title: "Peinture Intérieure",
-      subtitle: "Peinture et finitions intérieures",
-      content: "Travaux de peinture intérieure professionnels. Application soignée pour transformer et embellir vos espaces de vie avec des finitions parfaites.",
+      title: "Carrelage Intérieur",
+      subtitle: "Carrelage et finitions intérieures",
+      content: "Travaux de carrelage intérieur professionnels. Pose soignée pour transformer et embellir vos espaces de vie avec des finitions parfaites.",
       image: "/peinture.png",
       gradientFrom: "#ff7e5f",
       gradientTo: "#feb47b",
-      href: "/services/peinture-interieure"
+      href: "/services/carrelage-interieur"
     },
     {
-      title: "Peinture Extérieure",
-      subtitle: "Ravalement et protection",
-      content: "Peinture extérieure et ravalement de façades. Protection et embellissement de vos murs extérieurs avec des produits adaptés aux intempéries.",
+      title: "Carrelage Extérieur",
+      subtitle: "Terrasses et extérieurs",
+      content: "Carrelage extérieur et aménagement de terrasses. Protection et embellissement de vos espaces extérieurs avec des matériaux adaptés.",
       image: "/maison-work.png",
       gradientFrom: "#667eea",
       gradientTo: "#764ba2",
-      href: "/services/peinture-exterieure"
+      href: "/services/carrelage-exterieur"
     },
     {
-      title: "Finitions & Décoration",
-      subtitle: "Techniques décoratives",
-      content: "Techniques de peinture décorative et finitions spéciales. Création d'ambiances uniques avec des effets de matière et de couleur.",
+      title: "Revêtements de Sol",
+      subtitle: "Sols et finitions",
+      content: "Pose de revêtements de sol et finitions spéciales. Création d'ambiances uniques avec des matériaux de qualité.",
       image: "/plomberie.png",
       gradientFrom: "#28a745",
       gradientTo: "#20c997",
-      href: "/services/finitions-decoration"
+      href: "/services/revetements-sol"
     }
   ];
 
 
 
   const contactInfo = {
-    address: "01800\nAuvergne-Rhône-Alpes\nRayon d'intervention : 50 km autour de 01800",
-    phone: "06 58 12 30 42",
-    email: "rouat.david@orange.fr",
-    mapEmbedUrl: "https://maps.google.com/maps?q=01800,France&t=&z=12&ie=UTF8&iwloc=&output=embed"
+    address: "63430\nAuvergne-Rhône-Alpes\nRayon d'intervention : 50 km autour de 63430",
+    phone: "07 45 65 62 25",
+    email: "oran.bat63@gmail.com",
+    mapEmbedUrl: "https://maps.google.com/maps?q=63430,France&t=&z=12&ie=UTF8&iwloc=&output=embed"
   };
 
   return (
@@ -106,7 +106,7 @@ export default function Home() {
       <TeamSection config={config.team} />
       <ContactSection 
         title="Contactez-nous"
-        subtitle="Parlons de votre projet de peinture intérieure ou extérieure en Auvergne-Rhône-Alpes"
+        subtitle="Parlons de votre projet de carrelage ou revêtements de sol dans le 63430 et Auvergne-Rhône-Alpes"
         contactInfo={contactInfo} 
       />
 

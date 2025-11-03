@@ -15,9 +15,9 @@ export default function Footer() {
   ];
 
   const servicesLinks = [
-    { name: 'Peinture Intérieure', href: '/services/peinture-interieure' },
-    { name: 'Peinture Extérieure', href: '/services/peinture-exterieure' },
-    { name: 'Finitions & Décoration', href: '/services/finitions-decoration' },
+    { name: 'Carrelage Intérieur', href: '/services/carrelage-interieur' },
+    { name: 'Carrelage Extérieur', href: '/services/carrelage-exterieur' },
+    { name: 'Revêtements de Sol', href: '/services/revetements-sol' },
   ];
 
   return (
@@ -49,17 +49,17 @@ export default function Footer() {
                   />
                 </motion.div>
                 <span className="text-xl font-bold">
-                  ROUAT DAVID
+                  ORAN-BAT63
                 </span>
               </div>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Entrepreneur du bâtiment spécialisé en peinture intérieure et extérieure en Auvergne-Rhône-Alpes.
+                Entrepreneur du bâtiment spécialisé en carrelage et revêtements de sol dans le 63430 et Auvergne-Rhône-Alpes.
               </p>
               <a 
-                href="tel:0658123042" 
+                href="tel:0745656225" 
                 className="text-primary hover:text-primary/80 text-sm font-medium transition-colors"
               >
-                06 58 12 30 42
+                07 45 65 62 25
               </a>
             </motion.div>
 
@@ -121,11 +121,11 @@ export default function Footer() {
               <h3 className="text-lg font-semibold">Contact</h3>
               <div className="space-y-2">
                 <a 
-                  href="tel:0658123042"
+                  href="tel:0745656225"
                   className="text-slate-300 hover:text-white text-sm transition-colors duration-200 block flex items-center space-x-2"
                 >
                   <Phone className="h-4 w-4" />
-                  <span>06 58 12 30 42</span>
+                  <span>07 45 65 62 25</span>
                 </a>
                 <p className="text-slate-400 text-xs">
                   Service gratuit 7j/7 de 9h à 19h
@@ -146,7 +146,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              © {currentYear} ROUAT DAVID. Tous droits réservés.
+              © {currentYear} ORAN-BAT63. Tous droits réservés.
             </motion.p>
 
             {/* Powered by */}
