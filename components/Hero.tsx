@@ -5,7 +5,6 @@ import { Check, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 import { HeroConfig } from '@/lib/config';
 import { submitFormToFirebase, validateFormData, FormData } from '@/lib/firebase-service';

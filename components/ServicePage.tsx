@@ -8,14 +8,8 @@ import { Button } from '@/components/ui/button';
 import { submitFormToFirebase, validateFormData, FormData } from '@/lib/firebase-service';
 import FormLoader from '@/components/FormLoader';
 import { useRouter } from 'next/navigation';
-import { Metadata } from 'next';
 
 interface ServicePageProps {
-  // SEO et métadonnées
-  title: string;
-  description: string;
-  keywords: string[];
-  
   // Contenu principal
   serviceName: string;
   heroImage: string;
@@ -48,20 +42,10 @@ interface ServicePageProps {
     email: string;
     address: string;
   };
-  
-  // Prix indicatifs (optionnel)
-  pricing?: {
-    title: string;
-    description: string;
-    priceRange: string;
-  }[];
 }
 
 
 export default function ServicePage({
-  title,
-  description,
-  keywords,
   serviceName,
   heroImage,
   heroTitle,
@@ -72,8 +56,7 @@ export default function ServicePage({
   subServices,
   advantages,
   serviceArea,
-  contactInfo,
-  pricing
+  contactInfo
 }: ServicePageProps) {
   const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
@@ -133,10 +116,10 @@ export default function ServicePage({
     "@context": "https://schema.org",
     "@type": "Service",
     "name": serviceName,
-    "description": description,
+    "description": mainDescription,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "ROUAT DAVID",
+      "name": "ORAN-BAT63",
       "telephone": contactInfo.phone,
       "email": contactInfo.email,
       "address": {
@@ -571,49 +554,3 @@ export default function ServicePage({
   );
 }
 
-// Fonction pour générer les métadonnées SEO automatiquement
-export function generateServiceMetadata(
-  serviceName: string,
-  location: string,
-  description: string,
-  keywords: string[]
-): Metadata {
-  const title = `${serviceName} ${location} - ORAN-BAT63 | Devis Gratuit`;
-  
-  return {
-    title,
-    description,
-    keywords: keywords.join(', '),
-    authors: [{ name: 'Mohammed Hadjouti' }],
-    creator: 'Mohammed Hadjouti',
-    publisher: 'ORAN-BAT63',
-    formatDetection: {
-      email: false,
-      address: false,
-      telephone: false,
-    },
-    openGraph: {
-      title,
-      description,
-      siteName: 'ORAN-BAT63 - Carrelage',
-      locale: 'fr_FR',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-  };
-}

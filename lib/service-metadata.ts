@@ -7,16 +7,16 @@ export function generateServiceMetadata(
   description: string,
   keywords: string[]
 ): Metadata {
-  const title = `${serviceName} ${location} - ROUAT DAVID | Devis Gratuit`;
-  const metaDescription = `${description} Devis gratuit et personnalisé en ${location}. Expert peintre professionnel.`;
+  const title = `${serviceName} ${location} - ORAN-BAT63 | Devis Gratuit`;
+  const metaDescription = `${description} Devis gratuit et personnalisé en ${location}. Expert carreleur professionnel.`;
 
   return {
     title,
     description: metaDescription,
-    keywords: [...keywords, 'devis gratuit', 'peintre professionnel', location].join(', '),
-    authors: [{ name: 'David Rouat' }],
-    creator: 'David Rouat',
-    publisher: 'ROUAT DAVID',
+    keywords: [...keywords, 'devis gratuit', 'carreleur professionnel', location].join(', '),
+    authors: [{ name: 'Mohammed Hadjouti' }],
+    creator: 'Mohammed Hadjouti',
+    publisher: 'ORAN-BAT63',
     formatDetection: {
       email: false,
       address: false,
@@ -27,7 +27,7 @@ export function generateServiceMetadata(
       description: metaDescription,
       type: 'website',
       locale: 'fr_FR',
-      siteName: 'ROUAT DAVID - Peinture',
+      siteName: 'ORAN-BAT63 - Carrelage',
     },
     twitter: {
       card: 'summary_large_image',
