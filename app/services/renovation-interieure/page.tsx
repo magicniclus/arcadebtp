@@ -4,7 +4,7 @@ import { generateMetadata } from '@/lib/seo-config';
 export default function RenovationInterieurePage() {
   const serviceData = {
     serviceName: "Rénovation Intérieure",
-    heroImage: "/macon.png",
+    heroImage: "/peinture.png",
     heroTitle: "Rénovation Intérieure Complète en Île-de-France",
     heroSubtitle: "ARCADE BTP, votre expert en rénovation intérieure dans le 93260. Devis gratuit et personnalisé pour tous vos projets de rénovation.",
     sector: "Bâtiment",
@@ -75,6 +75,6 @@ export default function RenovationInterieurePage() {
 export const metadata = generateMetadata(
   "Rénovation Intérieure Île-de-France - Devis Gratuit",
   "ARCADE BTP, expert en rénovation intérieure dans le 93260 et Île-de-France. Devis gratuit et personnalisé. Travaux clé en main, finitions soignées.",
-  "/macon.png",
+  "/peinture.png",
   "/services/renovation-interieure"
 );
